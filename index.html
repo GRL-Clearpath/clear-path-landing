@@ -21,28 +21,34 @@
 
     /* HERO */
     .hero {
-  position: relative;
-  height: 100vh;
-  background-image: url('https://psu-gatsby-files-prod.s3.amazonaws.com/s3fs-public/2022/11/ED%20Crowd-Tashi-Delek.jpg');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
+      position: relative;
+      height: 100vh;
+      background-image: url('https://psu-gatsby-files-prod.s3.amazonaws.com/s3fs-public/2022/11/ED%20Crowd-Tashi-Delek.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      overflow: hidden;
+    }
 
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.35); /* overlay para texto legível */
-}
+    /* Overlay com blur e transparência */
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.25); /* leve escurecimento */
+      backdrop-filter: blur(3px); /* blur mínimo */
+      z-index: 0;
+    }
 
     .hero-content {
       position: relative;
       text-align: center;
       max-width: 900px;
       padding: 20px;
+      z-index: 1; /* texto acima do overlay */
     }
 
     .badge {
@@ -200,14 +206,13 @@
 
   <!-- HERO -->
   <header class="hero">
-    <div class="hero-overlay"></div>
     <div class="hero-content">
       <span class="badge">Telemedicine-Enabled Emergency Flow</span>
       <h1>Emergency Rooms Are for Saving Lives — Not for Waiting</h1>
       <p>
         Clear Path reduces emergency room overcrowding by redirecting non-urgent
-        patients to immediate telemedicine, enabling faster care and more
-        efficient hospital operations.
+        patients to immediate telemedicine, enabling faster care e mais
+        eficiente hospital operations.
       </p>
       <a href="#demo" class="btn">Request a Demo</a>
     </div>
@@ -316,4 +321,3 @@
 
 </body>
 </html>
-
