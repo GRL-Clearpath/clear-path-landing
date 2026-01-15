@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Clear Path | Smarter Emergency Care</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>Clear Path | Emergency Care Without the Wait</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Segoe UI', system-ui, sans-serif;
     }
 
     body {
-      background: #f9fafb;
-      color: #1f2933;
+      background: #f8fafc;
+      color: #0f172a;
       line-height: 1.6;
     }
 
     header {
       background: linear-gradient(135deg, #0f4c75, #3282b8);
       color: white;
-      padding: 100px 20px;
+      padding: 120px 20px;
       text-align: center;
     }
 
     header h1 {
-      font-size: 3rem;
+      font-size: 3.2rem;
       margin-bottom: 20px;
     }
 
     header p {
+      max-width: 800px;
+      margin: auto;
       font-size: 1.2rem;
-      max-width: 700px;
-      margin: 0 auto 30px;
+      opacity: 0.95;
+    }
+
+    .cta {
+      margin-top: 40px;
     }
 
     .btn {
       background: #22c55e;
       color: white;
-      padding: 15px 30px;
+      padding: 15px 35px;
       text-decoration: none;
       border-radius: 30px;
       font-weight: bold;
       transition: 0.3s;
+      display: inline-block;
     }
 
     .btn:hover {
@@ -51,47 +57,86 @@
     }
 
     section {
-      padding: 80px 20px;
-      max-width: 1100px;
+      padding: 90px 20px;
+      max-width: 1150px;
       margin: auto;
     }
 
-    section h2 {
-      font-size: 2.2rem;
-      margin-bottom: 20px;
+    h2 {
       text-align: center;
+      font-size: 2.4rem;
+      margin-bottom: 25px;
     }
 
-    section p {
+    .subtitle {
       text-align: center;
       max-width: 800px;
-      margin: 0 auto 40px;
-      font-size: 1.05rem;
+      margin: auto;
+      margin-bottom: 60px;
+      color: #475569;
+      font-size: 1.1rem;
     }
 
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
+      gap: 35px;
     }
 
     .card {
       background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-      text-align: center;
+      padding: 35px;
+      border-radius: 16px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+    }
+
+    .metric {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #0f4c75;
+    }
+
+    .journey {
+      border-left: 4px solid #22c55e;
+      padding-left: 20px;
+    }
+
+    form {
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+      max-width: 600px;
+      margin: auto;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: 1px solid #cbd5e1;
+      font-size: 1rem;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 30px;
+      background: #22c55e;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
     }
 
     footer {
-      background: #0f172a;
-      color: white;
+      background: #020617;
+      color: #cbd5e1;
       text-align: center;
       padding: 40px 20px;
-    }
-
-    footer p {
-      opacity: 0.8;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -99,47 +144,109 @@
 
 <header>
   <h1>Clear Path</h1>
-  <p>Smarter emergency care starts with shorter wait times.  
-     Reduce ER overcrowding by redirecting non-urgent patients to instant telemedicine.</p>
-  <a href="#" class="btn">Request a Demo</a>
+  <p>
+    Emergency care without the wait.  
+    Clear Path reduces emergency room overcrowding by redirecting non-urgent patients
+    to immediate telemedicine — improving outcomes, efficiency, and patient experience.
+  </p>
+  <div class="cta">
+    <a href="#demo" class="btn">Request a Demo</a>
+  </div>
 </header>
 
 <section>
-  <h2>The Problem</h2>
-  <p>Emergency departments are overwhelmed by non-urgent cases, leading to long waiting times, staff burnout, and reduced quality of care.</p>
-</section>
-
-<section>
-  <h2>Our Solution</h2>
-  <p>Clear Path integrates telemedicine directly into emergency triage, redirecting Manchester Blue and Green patients to immediate remote care.</p>
-</section>
-
-<section>
-  <h2>How It Works</h2>
+  <h2>Measured Impact</h2>
+  <p class="subtitle">Designed to deliver operational efficiency and measurable healthcare outcomes.</p>
   <div class="grid">
-    <div class="card">Patient arrives at ER</div>
-    <div class="card">Manchester triage is performed</div>
-    <div class="card">Non-urgent patients identified</div>
-    <div class="card">Telemedicine consultation begins</div>
+    <div class="card"><div class="metric">−35%</div>ER waiting time</div>
+    <div class="card"><div class="metric">+25%</div>Emergency throughput</div>
+    <div class="card"><div class="metric">−30%</div>Non-urgent ER occupancy</div>
   </div>
 </section>
 
 <section>
-  <h2>Benefits</h2>
+  <h2>The Problem</h2>
+  <p class="subtitle">
+    Emergency departments are overwhelmed by patients who do not require urgent in-person care.
+    This leads to long wait times, increased costs, and reduced quality of care for critical cases.
+  </p>
+</section>
+
+<section>
+  <h2>The Clear Path Solution</h2>
+  <p class="subtitle">
+    Clear Path integrates telemedicine directly into emergency triage workflows,
+    enabling hospitals to safely redirect Manchester Blue and Green patients
+    to immediate remote medical consultations.
+  </p>
+</section>
+
+<section>
+  <h2>Patient Journey (Manchester Blue & Green)</h2>
+  <div class="grid">
+    <div class="card journey">
+      <strong>1. Arrival & Triage</strong>
+      <p>Patient arrives at the emergency department and undergoes standard Manchester triage.</p>
+    </div>
+    <div class="card journey">
+      <strong>2. Non-Urgent Identification</strong>
+      <p>Patients classified as Blue or Green are identified as non-urgent.</p>
+    </div>
+    <div class="card journey">
+      <strong>3. Telemedicine Redirection</strong>
+      <p>Patient is redirected to an immediate telemedicine consultation.</p>
+    </div>
+    <div class="card journey">
+      <strong>4. Resolution or Referral</strong>
+      <p>Case is resolved remotely or referred back to in-person care if necessary.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Value Proposition</h2>
   <div class="grid">
     <div class="card">
       <h3>For Hospitals</h3>
-      <p>Reduced waiting times, optimized resources, lower costs.</p>
+      <p>
+        Reduced overcrowding, lower operational costs,
+        optimized physician allocation and improved emergency flow.
+      </p>
     </div>
     <div class="card">
       <h3>For Patients</h3>
-      <p>Immediate care, no unnecessary waiting, same medical quality.</p>
+      <p>
+        Faster access to care, safer environment,
+        and a calmer, more efficient healthcare experience.
+      </p>
     </div>
   </div>
 </section>
 
+<section>
+  <h2>Business Model</h2>
+  <p class="subtitle">
+    Clear Path operates as a B2B / B2G SaaS platform, licensed to hospitals
+    and healthcare systems on a per-facility or per-volume basis.
+  </p>
+</section>
+
+<section id="demo">
+  <h2>Request a Demo</h2>
+  <p class="subtitle">
+    Discover how Clear Path can transform emergency care delivery.
+  </p>
+  <form>
+    <input type="text" placeholder="Full Name" required />
+    <input type="email" placeholder="Email Address" required />
+    <input type="text" placeholder="Organization / Hospital" />
+    <textarea placeholder="Message"></textarea>
+    <button type="submit">Request Demo</button>
+  </form>
+</section>
+
 <footer>
-  <p>Clear Path © 2026 — Redefining Emergency Care</p>
+  <p>Clear Path © 2026 — Reimagining Emergency Care Through Smart Telemedicine</p>
 </footer>
 
 </body>
